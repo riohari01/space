@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <title>iSpaceTransform |sample</title>
+    <link rel="icon" href="https://www.ispacetransform.com/static/contents/image/favicon.png" type="image/png" />
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="sign inpage .css">
+    <!-- <link rel="stylesheet" href="rumm1.css" /> -->
+     <!-- UIkit JS -->
+            <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <div class="uk-container uk-container-expand">
+        <nav class="uk-navbar-container  navigation" uk-navbar>
+            <!-- <button-navbar> -->
+            <div class="uk-navbar-left">              
+                <ul class="uk-navbar-nav navbar">
+                    <li> <a href="#"><img src="https://www.ispacetransform.com/static/contents/image/logo.webp" width="60px">
+                         <span class="uk-h3 uk-margin-remove cs-color">TRANSFORM</span>
+                        </a>
+                    </li>  
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <button class="uk-button uk-button-default border"  type="button" uk-toggle="target: #offcanvas-flip"><img src="open-menu.png" width="60px"></button>
+                <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                    <div class="uk-offcanvas-bar">
+                        <div class="mini">
+                            <button class="uk-offcanvas-close " type="button" uk-close></button>
+                            <ul class="uk-navbar-nav block">
+                                <li ><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#our-services">Services</a></li>
+                                <li><a href="#our-work">Our work</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li> <a class="uk-button uk-button-default cs-btn" href="#modal-center" uk-toggle>My Account</a>
+                                    <div id="modal-center" class="uk-flex-top" uk-modal>
+                                        <div>
+                                            <div class="uk-card uk-card-secondary uk-card-body uk-margin-auto uk-width-1-4@m">
+                                                <div class="uk-text-center">
+                                                    <img src="https://www.ispacetransform.com/static/contents/image/logo.webp" width="80px" style="background-color: none;">
+                                                    <h3 class="uk-card-title ">TRANSFORM</h3>
+                                                    <h3 class="uk-card-title">SIGN IN</h3>
+                                                </div>
+                                                <div>
+                                                    <form>
+                                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                                        <fieldset class="uk-fieldset">
+                                                            <div class="uk-inline  uk-width-1-1@m">
+                                                                <fieldset>
+                                                                    <legend>Username / Email*</legend>    
+                                                                    <span class="uk-form-icon  uk-form-icon-flip" uk-icon="icon: user"></span>
+                                                                    <input class="uk-input input" type="text" placeholder="Username / Email">
+                                                                </fieldset>
+                                                            </div>
+                                                            <div class="uk-inline  uk-width-1-1@m">
+                                                                <fieldset>
+                                                                    <legend>Password*</legend>                           
+                                                                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                                                                    <input class="uk-input input " type="password" placeholder="Password">
+                                                                </fieldset>
+                                                            </div>
+                                                            <div class="uk-clearfix">
+                                                                <div class="uk-float-right">
+                                                                    <div class=""><a href="#" >Forget Password?</a></div>
+                                                                </div>
+                                                                <div class="uk-float-left">
+                                                                    <label  class="uk-margin-small" ><input class="uk-checkbox" type="checkbox" checked> Keep Sign in</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="uk-text-center uk-margin">
+                                                                <button  class="uk-button uk-button-default cs-btn"><a href="https://www.ispacetransform.com/wrkz/studio/index/">Sign In</a></button>
+                                                                <p class="leig">Don't have an account? Create account</p>
+                                                           </div>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <nav-bar> -->
+            <div>
+                <ul class="uk-navbar-nav color">
+                    <li ><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#our-services">Services</a></li>
+                    <li><a href="#our-work">Our work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="self"><a class="uk-button uk-button-default cs-btn" href="#modal-center" uk-toggle>My Account</a>
+                        <div id="modal-center" class="uk-flex-top " uk-modal>
+                            <div>
+                                <div class="uk-card uk-card-secondary uk-card-body auto  uk-width-1-4@m">
+                                    <div class="uk-text-center">
+                                        <img src="https://www.ispacetransform.com/static/contents/image/logo.webp" width="80px" style="background-color: none;">
+                                        <h3 class="uk-card-title ">TRANSFORM</h3>
+                                        <h3 class="uk-card-title">SIGN IN</h3>
+                                    </div>
+                                    <div>
+                                        <form>
+                                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                                            <fieldset class="uk-fieldset">
+                                                <div class="uk-inline  uk-width-1-1@m">
+                                                    <fieldset>
+                                                        <legend>Username / Email*</legend>    
+                                                        <span class="uk-form-icon  uk-form-icon-flip" uk-icon="icon: user"></span>
+                                                        <input class="uk-input input" type="text" placeholder="Username / Email">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="uk-inline  uk-width-1-1@m">
+                                                    <fieldset>
+                                                        <legend>Password*</legend>                           
+                                                        <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                                                        <input class="uk-input input " type="password" placeholder="Password">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="uk-clearfix">
+                                                    <div class="uk-float-right">
+                                                        <div class=""><a href="#" >Forget Password?</a></div>
+                                                    </div>
+                                                    <div class="uk-float-left">
+                                                        <label  class="uk-margin-small" ><input class="uk-checkbox" type="checkbox" checked> Keep Sign in</label>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-text-center uk-margin">
+                                                    <button  class="uk-button uk-button-default cs-btn"><a href="https://www.ispacetransform.com/wrkz/studio/index/">Sign In</a></button>
+                                                    <p class="leig">Don't have an account? Create account</p>
+                                               </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="home">
+            <div class="uk-card  uk-card-secondary uk-grid-collapse uk-child-width-1-2@m height uk-margin" uk-grid>
+                <div class="uk-flex-last uk-card-media-right uk-cover-container gh-img">
+                    
+                </div>
+                <div class="justify uk-container uk-text-center">
+                    <div class="uk-card-body uk-text-center uk-card js-margin uk-container-small">
+                        <h1 class="uk-h1 size">iSPACE TRANSFORM</h1>
+                        <p class="weight">Specialized in Operations Execution System, Digital Visual Marketing and Automation Solutions for Industries</p>
+                        <p class="leight">Industrial Space Transformation platform is the part of MONTEGROW Pte. Ltd., Singapore and to help your business grow. Since our founding in 2019, we have guided countless clients to help them achieve their unique business goals. Using our proven end-to-end methods, we will equip you and your organization with a plan to succeed. You can count on our team to give you the best insights towards your future in Business Process Operations Execution System, Digital Visual Marketing and Industrial Automation Solutions for Industries.</p>
+                        <p class="leight">We TARGET Industry 4.0 (i4.0) solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-container uk-text-center">
+            <div class="uk-card-body  uk-container-small" id="our-services">
+                <h1 class="uk-h1" style="color: whitesmoke;">OUR SERVICES</h1>
+                <p class="leight">Discover Our Expertise</p>
+                <p  class="leight">iSpace Transform offers a wide range of consulting services to serve a variety of businesses and clients. Whether you’re a small, local business or a multinational corporation, we can help you reach new levels of success. Get in touch with us today to learn more about our services and what our team can do for you.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-container-xlarge uk-align-center">
+                <div class="uk-card uk-card-secondary uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                        <img src="https://www.ispacetransform.com/static/contents/image/home/demo.jpg" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body" id="our-work">
+                            <h3 class="uk-card-title">WRKZ <span><img src="https://www.ispacetransform.com/static/contents/image/home/wrkz.png" width="50px"></span></h3>
+                            <p class="leight">iSpace WrkZ is an Operations Execution & Marketing System (OES), one of the suites of manufacturing systems designed to execute operations tasks such as Production, Maintenance, Supply Chain or Inventory Management. WrkZ has the Digital Business Process Automation capabilities and capacities to address the Business Process issues which is common for the Manufacturing, Services and Process industrial service providers. Using WrkZ, Organisations will be able to carry on the daily operation by creating Business Process (Work Order, Job Order) and by following the Statement of Processes (SoP’s) to communicate and track the work flow throughout the life cycle of the Business Process..</p>
+                            <p class="leight">3 type(s) of BP:<br>
+                                - Operational Process<br>
+                                - Support Process<br>
+                                - Management Process
+                            </p>
+                            <p class="leight">By digitizing the operations using, WrkZ automated Business Process framework, Organisations will be able to Streamline & Automate the Business Process models, reduce paper work and improve in Planning, Monitoring, Tracking of business operations and costing involved.</p>
+                            <button class="uk-button   uk-button-default cs-btn">visit site</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-container-xlarge uk-align-center">
+                <div class="uk-card uk-card-secondary uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="https://www.ispacetransform.com/static/contents/image/home/image-4.jpg" alt="" uk-cover>
+                        <canvas width="600" height="500"></canvas>
+                    </div>
+                    <div class="justify">
+                        <div class="uk-card-body ">
+                            <h3 class="uk-card-title">DIGITAL VISUAL MARKETING</h3>
+                            <p class="leight">Market Products / Services / Process Visually</p>
+                            <p class="leight">Our Digital Visual Marketing Platform helps Corporates, Industries help their Products, Services or Process to market globally using the marketing techniques online.</p>
+                            <button class="uk-button   uk-button-default cs-btn">visit site</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="justify">
+            <div class="uk-container-xlarge uk-align-center">
+                <div class="uk-card uk-card-secondary uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                        <img src="https://www.ispacetransform.com/static/contents/image/home/image-5.jpg" alt="" uk-cover>
+                        <canvas width="600" height="500"></canvas>
+                    </div>
+                    <div  class="justify">
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">AUTOMATION ENGINEERING </h3>
+                            <p class="leight">Control Machines and Assembly Lines</p>
+                            <p class="leight">iSpace Transform Engineering Team specialized in providing Automation Solutions for highly precise and productive manufacturing process by following industry best practices.</p>
+                            <button class="uk-button uk-button-default cs-btn">Get in Touch</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-container-xlarge uk-align-center">
+            <div class="uk-card uk-card-secondary uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class="uk-card-media-left uk-cover-container">
+                    <img src="https://www.ispacetransform.com/static/contents/image/home/image-6.jpg" alt="" uk-cover>
+                    <canvas width="600" height="500"></canvas>
+                </div>
+                <div class="justify">
+                    <div class="uk-card-body ">
+                        <h3 class="uk-card-title">INTRODUCTORY CONSULTATION</h3>
+                        <p class="leight">Expert Guidance</p>
+                        <p class="leight">Looking to develop your business but not sure where to turn? Need help planning or executing your next project? Let us guide you. Any organization can move forward with small incremental changes, but building for the future in today’s rapidly evolving environment means taking bold chances and making insightful decisions.</p>
+                        <button class="uk-button   uk-button-default cs-btn">Get in Touch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="justify">
+            <div class="uk-container-xlarge uk-align-center">
+                <div class="uk-card uk-card-secondary uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                        <img src="https://www.ispacetransform.com/static/contents/image/home/image-7.jpg" alt="" uk-cover>
+                        <canvas width="600" height="500"></canvas>
+                    </div>
+                    <div  class="justify">
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">STRATEGIC PLANNING</h3>
+                            <p class="leight">Grow Your Business</p>
+                            <p class="leight">We examine what organizations are doing to stay relevant and competitive in this fast-paced world, and which ones are doing it best. We then strategize using smart tools and global resources in order to understand the implications of every choice our clients can make. Get in touch to learn more about how this service can help you.</p>
+                            <button class="uk-button   uk-button-default cs-btn">Get in Touch</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-container uk-text-center">
+            <div class="uk-card-body  uk-container-small" id="about">
+                <h1 class="uk-h1" style="color: whitesmoke;">STATISTICS</h1>
+                <p class="leight">Digital Marketing Usage</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-container-xlarge uk-container">
+                <div class="uk-child-width-1-3@s uk-card uk-card-secondary  uk-text-center" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-body">
+                            <ul class="uk-list">
+                                <li><a href="#" ><img src="analytic.png" width="50px"></a></li>
+                                <li><a href="#" class="percentage".
+                                    
+                                    salem>65%</a></li>
+                                <li><a href="#" class="leight" >Monthly Sales Increase</a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-body">
+                            <ul class="uk-list">
+                                <li><a href="#" ><img src="cy.png" width="50px"></a></li>
+                                <li><a href="#" class="percentage">25%</a></li>
+                                <li><a href="#" class="leight" >Average Cost Daily</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-body">
+                            <ul class="uk-list">
+                                <li><a href="#" ><img src="calendar.png" width="50px"></a></li>
+                                <li><a href="#" class="percentage">50%</a></li>
+                                <li><a href="#" class="leight" >Annual Growth</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin-large-top">
+            <div class="uk-container-large uk-align-center">
+                <div class="uk-card uk-card-body uk-child-width-1-2@m uk-margin-remove" uk-grid>
+                    <div class="responsive-map map uk-width-1-1@m">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div  class="justify">
+                        <div id="contact">
+                            <div>
+                                <form>
+                                    <fieldset class="uk-fieldset">
+                                        <div class="uk-margin">
+                                            <h1 class="uk-h1" style="color: whitesmoke;">Contact Us</h1>
+                                            <input class="uk-input uk-form-width-large" type="text" placeholder="Name">
+                                        </div>
+                                        <div class="uk-margin">
+                                            <input class="uk-input uk-form-width-large" type="text" placeholder="Email Id">
+                                        </div>
+                                        <div class="uk-margin">
+                                            <input class="uk-input uk-form-width-large" type="text" placeholder="Subject">
+                                        </div>
+                                        <div class="uk-margin">
+                                            <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                                        </div>
+                                        <button class="uk-button uk-width-1-1 uk-margin-small-bottom" style="border-radius: 7px;">Send</button>
+
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin-large-top">
+            <div class="uk-width-1-1@m uk-text-center leight">
+                <ul class="uk-list " style="display: inline-flex;">
+                    <li class="uk-margin-small-top"><a href="facebook.com" uk-icon="icon: facebook"></a></li>
+                    <li><a href="instagram.com" uk-icon="icon: instagram"></a></li>
+                    <li><a href="twitter.com" uk-icon="icon: twitter"></a></li>
+                    <li><a href="youtube.com" uk-icon="icon: youtube"></a></li>
+                    <li><a href="linkedin.com" uk-icon="icon: linkedin"></a></li>
+                </ul>
+            </div>
+            <div class="uk-text-center"> 
+                <p class="leight">iSpace Transform © 2022 by MONTEGROW Pte. Ltd.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
